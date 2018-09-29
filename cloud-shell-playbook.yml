@@ -1,0 +1,12 @@
+- name: Cloud Shell Playbook
+  hosts: all
+  become: yes
+  roles:
+    - geerlingguy.pip
+    - geerlingguy.docker
+    - andrewrothstein.go
+  tasks:
+    - name: Install rmate
+      pip:
+        name: rmate
+        state: present
