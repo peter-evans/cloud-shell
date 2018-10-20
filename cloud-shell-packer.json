@@ -15,7 +15,7 @@
   "builders": [
     {
       "type": "googlecompute",
-      "account_file": "service_account.json",
+      "account_file": "packer_service_account.json",
       "project_id": "{{user `project_id`}}",
       "image_name": "{{user `image_name`}}",
       "image_description": "Cloud Shell",      

@@ -8,7 +8,7 @@ source cloud-shell.cfg
 SA_NAME=packer-service-account
 SA_DISPLAY_NAME="Packer Service Account"
 SA_EMAIL=$SA_NAME@$PROJECT_ID.iam.gserviceaccount.com
-KEY_FILE=service_account.json
+KEY_FILE=packer_service_account.json
 
 # Create a new GCP IAM service account
 gcloud iam service-accounts create $SA_NAME --display-name "$SA_DISPLAY_NAME" --project $PROJECT_ID

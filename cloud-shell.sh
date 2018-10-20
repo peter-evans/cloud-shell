@@ -25,7 +25,8 @@ if [ $1 == "up" ]; then
 			--machine-type $MACHINE_TYPE \
 			--boot-disk-size $BOOT_DISK_SIZE \
 			--image $IMAGE_NAME \
-			--scopes "cloud-platform"
+			--scopes "cloud-platform" \
+			--service-account $SERVICE_ACCOUNT
 
 	fi
 

@@ -27,7 +27,7 @@ The image must first be built and stored in the desired GCP zone.
 
 2. Execute the following script to create a Google Cloud service account for Packer. It will be created with the `compute.instanceAdmin.v1` and `iam.serviceAccountUser` roles.
     ```bash
-    ./create_service_account.sh
+    ./create_packer_service_account.sh
     ```
 
 3. (Optional) Customise the shell image by, for example, adding [Ansible Galaxy](https://galaxy.ansible.com/) roles.
