@@ -1,3 +1,3 @@
 *.retry
-service_account.json
+*service_account.json
 INSTANCE.cfg
